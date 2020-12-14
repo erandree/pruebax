@@ -1,0 +1,269 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+/* --------------------------------------- Estilos para el body ------------------------- */
+
+
+body {
+    /* SOLO PARA TEXTO */
+    color: rgb(0, 0, 0);
+    font-family: 'Arial',sans-serif;
+    transition: margin-left .5s;
+    background-color: #ffffff;
+    
+}
+
+/* -------------------------------------------- Secciones ------------------------------------- */
+
+
+.seccion_central {
+    padding: 30px;
+    min-height: 550px;
+}
+
+
+/* ------------------------------------------- Elementos -------------------------------------- */
+
+hr {
+    background: grey;
+    height: 1px;
+    border: 0px;
+}
+
+#icono_perfil {
+    border-radius: 100%;
+    width: 45px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* ------------------------------------------- Scrollbar ------------------------------------------ */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #009e9e; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(68, 66, 66); 
+}
+
+
+
+.contenedor{
+    width: 95%;
+    margin: 30px auto;
+    overflow: hidden;
+
+}
+
+h2{
+    display: block;
+    margin-top: 20px !important;
+    margin-bottom: 30px !important;
+    text-align: center;
+    font-size: 25px !important;
+    font-family: 'Arial', sans-serif !important;
+    font-weight: bold !important;
+    color: rgb(0, 120, 150) !important;
+}
+
+.barra__buscador{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.formulario{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+form .input__text{
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #575757;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    max-width: 30%;
+    margin-right: 10px;
+    outline: medium none;
+}
+
+
+form .input__text:focus{
+    border: 2px solid #00cfc5;
+}
+form .form-groupedit{
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+form .form-groupedit .input__text{
+    max-width: 45% !important;
+}
+
+.form-groupedit .mensajes{
+    margin: 10px;
+}
+
+
+form .btn{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    background: rgb(3, 113, 163);
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    outline: medium none;
+    cursor: pointer;
+}
+
+.btn__nuevo{
+    float: right;
+    background: #1b743c !important;
+}
+
+.btn__group{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.btn__primary{
+    background: rgb(3, 113, 163);
+}
+.btn__danger{
+    background: #8a0505 !important;
+}
+
+
+/* ---------------------------------------------------tablas--------------------------------------------------- */
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table .head{
+    background: rgb(0, 52, 121);
+}
+table .head td{
+    color: #fff;
+    font-family: 'Arial',sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    background: rgb(0, 52, 121);
+}
+
+table .head th{
+    color: #fff;
+    font-family: 'Arial',sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    background: rgb(0, 52, 121);
+}
+
+table tr td{
+    border:1px solid #ccc;
+    padding: 7px;
+    font-size: 14px;
+    color: #555;
+}
+
+.btn__update{
+    display: inline-block;
+    font-size: 14px;
+    background: #1b743c;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.btn__delete{
+    display: inline-block;
+    font-size: 14px;
+    background: #8a0505;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.btn__detalles{
+    display: inline-block;
+    font-size: 14px;
+    background: #c46f00;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+
+.acomodar {
+    margin-left: 50% !important;
+}
+
+.incorrecto { 
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    background: red;
+    padding: 5px;
+    margin-right: 20%;
+    margin-left: 20%;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+
+.btnmenu {
+    background-color: transparent;
+    border: none; /* Remove borders */
+    color: rgb(233, 233, 233); /* White text */
+    padding: 10px 10px; /* Some padding */
+    font-size: 20px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+    border-radius: 50%;
+  }
+  
+  /* Darker background on mouse-over */
+  .btnmenu:hover {
+    color: rgb(255, 255, 255);
+  }

@@ -1,0 +1,95 @@
+/* Fuentes */
+
+@import url('https://fonts.googleapis.com/css2?family=Shojumaru&display=swap');
+
+/* Navegador principal */
+
+
+.container header {
+  background-color: #ffffff !important;
+  color: #580054 !important;
+}
+
+.barraheader {
+  display: flex;
+  justify-content: space-around;
+  align-items: left;
+  background-color: #580054;
+  color: #ffffff;
+  height: auto;
+}
+
+#logo {
+  height: 125px;
+}
+
+#icono_perfil {
+  border-radius: 100%;
+  width: 45px;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+
+.tituloheader1 {
+  color: #580054;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+
+}
+
+.tituloheader2 {
+  color: #580054;
+  font-size: 20px;
+  font-weight: 600;
+  
+}
+
+.tituloheader3 {
+  color: #580054;
+  font-size: 25px;
+  font-weight: 700;
+
+}
+
+.alinearizquierda{
+  text-align: left;
+  vertical-align: middle;
+  margin: auto;
+
+  
+}
+
+.alinear {
+  text-align: center;
+  vertical-align: middle;
+  margin: auto;
+  }
+  
+
+  
+  @media only screen and (max-width: 700px) {
+    .alinearizquierda{
+      text-align: center;
+    }
+  
+    .alinear {
+      text-align: center;
+      vertical-align: middle;
+      margin: auto;
+      margin-top: 20px;
+      }
+  
+  }
+
+  .sticky-top2 {
+    position: sticky;
+    top: 50px;
+    z-index: 5;
+  }
+
+ 
