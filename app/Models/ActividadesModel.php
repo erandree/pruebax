@@ -60,6 +60,17 @@ class ActividadesModel{
             return false;
         } 
     }
+
+    public function eliminaractividad($id_actividad)
+    {
+        $consulta = $this->db->query("DELETE FROM actividades WHERE id = '".$id_actividad."';");
+        if($consulta){
+            return true;
+        }else{
+            return false;
+        }
+
+    }
     
 
 }

@@ -3,10 +3,10 @@
 
 $controllers = array(
     'Menu' => ['index'],
-    'Proyecto'=>["registro","listado","administracion","actualizar","editar"],
+    'Proyecto'=>["registro","listado","administracion","actualizar","editar","detalles"],
     'Usuario'=>["administracion","registrar","guardar","editar","actualizar", "eliminar","eliminarusuario"],
     'Participantes'=>["administracion","editar","actualizar","asignar","agregarparticipante","remover","eliminar"],
-    'Actividades'=>["administracion","editar","modificar","agregar","guardar","eliminar"]
+    'Actividades'=>["administracion","editar","modificar","agregar","guardar","remover","eliminar"]
 );
 
 if (array_key_exists($controller, $controllers)) {

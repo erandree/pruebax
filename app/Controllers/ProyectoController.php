@@ -1,6 +1,8 @@
 <?php
 
 require_once('Models/ProyectoModel.php');
+require_once('Models/ActividadesModel.php');
+require_once('Models/ParticipantesModel.php');
 
 class ProyectoController
 {
@@ -127,5 +129,23 @@ class ProyectoController
         {
 
         }
+      }
+
+      function detalles()
+      {
+        $id_proyecto = $_GET['id_proyecto'];
+        $totalhoras = 0;
+        $contador = 0;
+
+        $proyecto = new ProyectoModel();
+        $activiades = new ActividadesModel();
+        $participantes = new ParticipantesModel();
+
+        $datosproyecto = $proyecto->listarproyecto($id_proyecto);
+        $datosactividades = $activiades->listar_actividades_del_proyecto($id_proyecto);
+        $datosparticipantes = $participantes->participantesproyecto($id_proyecto);
+
+        require_once('Views/Proyecto/detalles.php');
+
       }
 }

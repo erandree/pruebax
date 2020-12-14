@@ -40,7 +40,7 @@
 					<td><a href="?controller=Proyecto&action=editar&id_proyecto=<?php echo $dato['id']; ?>"  class="btn btn-primary btn-sm" >Editar</a></td>
 					<td><a href="?controller=Participantes&action=administracion&id_proyecto=<?php echo $dato['id']; ?>" class="btn btn-info btn-sm">Participantes</a></td>
 					<td><a href="?controller=Actividades&action=administracion&id_proyecto=<?php echo $dato['id']; ?>"  class="btn btn-dark btn-sm" >Actividades</a></td>
-					<td><a href="proyecto.php?id=<?php echo $dato['id']; ?>" class="btn btn-warning btn-sm">Detalles</a></td>
+					<td><a href="?controller=Proyecto&action=detalles&id_proyecto=<?php echo $dato['id']; ?>" class="btn btn-warning btn-sm">Detalles</a></td>
 
 				</tr>
 			<?php endforeach ?>

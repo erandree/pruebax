@@ -156,7 +156,7 @@ class ParticipantesController
 
     function eliminar(){
       $id_proyecto = $_POST['id_proyecto'];
-      $id_participante = $_POST['id_participante'];
+      $id_participante = $_GET['id_participante'];
 
       $participante = new ParticipantesModel();
       if($participante->eliminarpartdeproyecto($id_proyecto,$id_participante))

@@ -30,7 +30,7 @@
 					<td><?php echo $fila['actividad']; ?></td>
 					<td><?php echo $fila['horas']; ?></td>
 					<td><a href="?controller=Actividades&action=editar&id_actividad=<?php echo $fila['id']; ?>&id_proyecto=<?php echo $fila['fk_proyecto']; ?>"  class="btn btn-primary btn-sm" >Editar</a></td>
-					<td><a href="?controller=Actividades&action=eliminar&id_actividad=<?php echo $fila['id']; ?>&id_proyecto=<?php echo $fila['fk_proyecto']; ?>"  class="btn btn-danger btn-sm" >Eliminar</a></td>
+					<td><a href="?controller=Actividades&action=remover&id_actividad=<?php echo $fila['id']; ?>&id_proyecto=<?php echo $fila['fk_proyecto']; ?>"  class="btn btn-danger btn-sm" >Remover</a></td>
 
 				</tr>
 			<?php endforeach ?>

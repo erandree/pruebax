@@ -98,4 +98,38 @@ class ActividadesController
           }
     }
 
+    function remover()
+    {
+
+      $id_actividad = $_GET['id_actividad'];
+      $id_proyecto = $_GET['id_proyecto'];
+
+      $actividades = new ActividadesModel();
+
+      $actividad = $actividades->datos_actividad_proyecto($id_actividad, $id_proyecto);
+
+      require_once('Views/Proyecto/Actividades/remover.php');
+
+    }
+
+    function eliminar(){
+
+      $id_actividad = $_POST['id_actividad'];
+      $id_proyecto = $_POST['id_proyecto'];
+
+      $actividades = new ActividadesModel();
+      if($actividades->eliminaractividad($id_actividad))
+            {
+              $mensaje = 'Se ha eliminado con exito';
+              $mensajeboton = "Aceptar";
+              $direccion = "?controller=Actividades&action=administracion&id_proyecto=$id_proyecto";
+  
+            }else{
+              $mensaje = 'Hubo un problema en la gestión de la Base de datos';
+              $mensajeboton = "Aceptar";
+              $direccion = "?controller=Actividades&action=administracion&id_proyecto=$id_proyecto";
+            }
+      require_once('Views/Usuarios/mensaje.php');
+  }
+
 }
