@@ -3,10 +3,10 @@
 
 $controllers = array(
     'Menu' => ['index'],
-    'Cliente'=>['index'],
     'Proyecto'=>["registro","listado","administracion","actualizar","editar"],
     'Usuario'=>["administracion","registrar","guardar","editar","actualizar", "eliminar","eliminarusuario"],
-    'Participantes'=>["administracion","editar","actualizar","asignar","agregarparticipante","remover","eliminar"]
+    'Participantes'=>["administracion","editar","actualizar","asignar","agregarparticipante","remover","eliminar"],
+    'Actividades'=>["administracion","editar","modificar","agregar","guardar","eliminar"]
 );
 
 if (array_key_exists($controller, $controllers)) {
@@ -39,7 +39,10 @@ function call($controller, $action)
             break; 
         case 'Participantes':
             $controller = new ParticipantesController();
-            break;       
+            break;
+        case 'Actividades':
+            $controller = new ActividadesController();
+            break;     
         default:
             # código...
             break;

@@ -5,7 +5,7 @@
 				<input type="text" name="buscar" placeholder="Buscar" value="<?php if(isset($buscar_text)) echo $buscar_text; ?>" class="input__text">
 				<input type="submit" class="btn" name="btn_buscar" value="Buscar">
 
-				<a href="?controller=Participantes&action=asignar&id_proyecto=<?php echo $_GET['id_proyecto']; ?>" class="btn btn__nuevo">Nuevo</a>
+				<a href="?controller=Participantes&action=asignar&id_proyecto=<?php echo $_GET['id_proyecto']; ?>" class="btn btn__nuevo">Asignar</a>
 
 			</form>
 		</div>

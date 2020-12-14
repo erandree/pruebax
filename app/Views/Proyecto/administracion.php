@@ -3,7 +3,7 @@
 		<div class="barra__buscador">
 			<form action="" class="formulario" method="post">
 				<input type="text" name="buscar" placeholder="Buscar" 
-				value="<?php if(isset($buscar_text)) echo $buscar_text; ?>" class="input__text">
+				value="" class="input__text">
 				
 				<input type="submit" class="btn" name="btn_buscar" value="Buscar">
 				<a href="?controller=Proyecto&action=registro" class="btn btn__nuevo">Nuevo</a>
@@ -39,7 +39,7 @@
 					<td><?php echo $dato['estado']; ?></td>
 					<td><a href="?controller=Proyecto&action=editar&id_proyecto=<?php echo $dato['id']; ?>"  class="btn btn-primary btn-sm" >Editar</a></td>
 					<td><a href="?controller=Participantes&action=administracion&id_proyecto=<?php echo $dato['id']; ?>" class="btn btn-info btn-sm">Participantes</a></td>
-					<td><a href="actividades.php?id=<?php echo $dato['id']; ?>"  class="btn btn-dark btn-sm" >Actividades</a></td>
+					<td><a href="?controller=Actividades&action=administracion&id_proyecto=<?php echo $dato['id']; ?>"  class="btn btn-dark btn-sm" >Actividades</a></td>
 					<td><a href="proyecto.php?id=<?php echo $dato['id']; ?>" class="btn btn-warning btn-sm">Detalles</a></td>
 
 				</tr>
