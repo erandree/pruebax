@@ -6,7 +6,7 @@ $controllers = array(
     'Cliente'=>['index'],
     'Proyecto'=>["registro","listado","administracion","actualizar","editar"],
     'Usuario'=>["administracion","registrar","guardar","editar","actualizar", "eliminar","eliminarusuario"],
-    'Participantes'=>["administracion","editar","actualizar"]
+    'Participantes'=>["administracion","editar","actualizar","asignar","agregarparticipante","remover","eliminar"]
 );
 
 if (array_key_exists($controller, $controllers)) {

@@ -5,7 +5,7 @@
 				<input type="text" name="buscar" placeholder="Buscar" value="<?php if(isset($buscar_text)) echo $buscar_text; ?>" class="input__text">
 				<input type="submit" class="btn" name="btn_buscar" value="Buscar">
 
-				<a href="registrarparticipante.php?id=<?php echo $proyectoid ?>" class="btn btn__nuevo">Nuevo</a>
+				<a href="?controller=Participantes&action=asignar&id_proyecto=<?php echo $_GET['id_proyecto']; ?>" class="btn btn__nuevo">Nuevo</a>
 
 			</form>
 		</div>
@@ -24,6 +24,7 @@
 					</tr>
 				</thead>
 				<tbody>
+				<?php if(!empty($datosparticipantes)){ ?>
 				<?php foreach($datosparticipantes as $fila):?>
 					<tr >
 						<td><?php echo $fila['id']; ?></td>
@@ -34,9 +35,10 @@
 						<td><?php echo $fila['celular']; ?></td>
 						<td><?php echo $fila['funcion']; ?></td>
 						<td><a href="?controller=Participantes&action=editar&id_proyecto=<?php echo $fila['id_proyecto']; ?>&id_participante=<?php echo $fila['id_participante']; ?>"  class="btn btn-primary btn-sm" >Editar</a></td>
-						<td><a href="eliminarpartproyecto.php?id=<?php echo $fila['id']; ?>&id_proyecto=<?php echo $proyectoid; ?>"  class="btn btn-danger btn-sm" >Eliminar</a></td>
+						<td><a href="?controller=Participantes&action=remover&id_proyecto=<?php echo $fila['id_proyecto']; ?>&id_participante=<?php echo $fila['id_participante']; ?>"  class="btn btn-danger btn-sm" >Remover</a></td>
 					</tr>
-				<?php endforeach ?>
+				<?php  endforeach ?>
+				<?php }else {echo "<h2>No hay participantes aún en este proyecto</h2>"; }?>
 				</tbody>
 		</table>
 	</div>
