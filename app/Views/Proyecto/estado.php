@@ -33,7 +33,7 @@
 
 								<div class="form-group m-0">
 									<button type="submit" name="registrarlo" class="btn btn-primary btn-block">
-										Actualizar
+										Cambiar estado
 									</button>
 								</div>
 
