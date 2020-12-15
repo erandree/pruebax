@@ -54,6 +54,21 @@ class ProyectoModel{
         }
     }
 
+    public function actualizarestado($data)
+    {
+        $consulta = $this->db->query("UPDATE proyectos SET 
+        estado = '".$data['estado']."'
+        WHERE id = '$data[id_proyecto]';");
+
+        if($consulta){
+            return true;
+        }else{
+            return false;
+        } 
+
+
+    }
+
     //Listar todos los proyectos de la tabla proyectos
 
     public function actualizarproyecto($data){

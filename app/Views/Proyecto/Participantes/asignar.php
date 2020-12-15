@@ -33,7 +33,7 @@
                                         <?php endforeach ?>
                                     </select>
                                     <div class="invalid-feedback">
-                                        Correo del participante es requerido
+                                        *Por favor seleccione el correo del participante
 										</div>
                                     
                                 
@@ -50,7 +50,7 @@
                                             <option value="Participante">Participante</option>
                                         </select>
                                         <div class="invalid-feedback">
-                                        Funcion es requerida
+                                        *Debe asignar una función al participante
 										</div>
                                 </div>
                             

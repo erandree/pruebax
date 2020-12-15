@@ -17,8 +17,6 @@
 					<th scope="col">Nombre</th>
 					<th scope="col">Tipo</th>
 					<th scope="col">Nivel</th>
-					<th scope="col">Clasificación</th>
-					<th scope="col">Categoría</th>
 					<th scope="col">Modalidad</th>
 					<th scope="col">Proponente</th>
 					<th scope="col">Estado</th>
@@ -32,12 +30,11 @@
 					<td><?php echo $dato['nombre']; ?></td>
 					<td><?php echo $dato['tipo']; ?></td>
 					<td><?php echo $dato['nivel']; ?></td>
-					<td><?php echo $dato['clasificacion']; ?></td>
-					<td><?php echo $dato['categoria']; ?></td>
 					<td><?php echo $dato['modalidad']; ?></td>
 					<td><?php echo $dato['proponente']; ?></td>
 					<td><?php echo $dato['estado']; ?></td>
 					<td><a href="?controller=Proyecto&action=editar&id_proyecto=<?php echo $dato['id']; ?>"  class="btn btn-primary btn-sm" >Editar</a></td>
+					<td><a href="?controller=Proyecto&action=estado&id_proyecto=<?php echo $dato['id']; ?>"  class="btn btn-success btn-sm" >Estado</a></td>
 					<td><a href="?controller=Participantes&action=administracion&id_proyecto=<?php echo $dato['id']; ?>" class="btn btn-info btn-sm">Participantes</a></td>
 					<td><a href="?controller=Actividades&action=administracion&id_proyecto=<?php echo $dato['id']; ?>"  class="btn btn-dark btn-sm" >Actividades</a></td>
 					<td><a href="?controller=Proyecto&action=detalles&id_proyecto=<?php echo $dato['id']; ?>" class="btn btn-warning btn-sm">Detalles</a></td>

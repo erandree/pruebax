@@ -43,7 +43,7 @@
 									<label for="horas" class="mensajes">Horas:</label>
 										<input type="number" step="0.1" class="form-control" name="horas" min="0" value="" required autofocus>
 										<div class="invalid-feedback">
-										*La actividad es requerida y no debe ser negativa
+										*La hora es requerida, no debe ser negativa, no debe tener mas de un decimal después del punto (.) y no deben haber dos o más puntos(.)
 										</div>
 								</div>
 

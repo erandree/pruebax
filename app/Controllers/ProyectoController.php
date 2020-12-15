@@ -84,6 +84,46 @@ class ProyectoController
         require_once('Views/Proyecto/editar.php');
     }
 
+      function estado()
+      {
+        $id_proyecto = $_GET['id_proyecto'];
+        $proyectos = new ProyectoModel();
+        $proyecto = $proyectos->listarproyecto($id_proyecto);
+        require_once('Views/Proyecto/estado.php');
+      }
+
+      function cambiarestado()
+      {
+        $mensaje = null;
+        $mensajeboton = null;
+        $direccion = null;
+
+        $data['id_proyecto'] = $_POST['id_proyecto'];
+        $data['estado'] = $_POST['estado'];
+
+        if(!empty($data['estado']))
+        {
+          $proyecto = new ProyectoModel();
+          if($proyecto->actualizarestado($data))
+            {
+              $mensaje = 'El cambio de estado fue exitoso';
+              $mensajeboton = "Aceptar";
+              $direccion = "?controller=Proyecto&action=administracion";
+              require_once('Views/Proyecto/mensaje.php');
+
+            }
+            else
+            {
+              $mensaje = 'Hubo un problema en la gestión con la base de datos';
+              $mensajeboton = "Aceptar";
+              $direccion = "?controller=Proyecto&action=administracion";
+              require_once('Views/Proyecto/mensaje.php');
+
+            }
+
+        }
+      }
+
     function actualizar() {
         
         $mensaje = null;

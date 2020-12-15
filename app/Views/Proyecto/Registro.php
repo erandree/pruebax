@@ -19,7 +19,7 @@
 									<label for="proponente">Proponente:</label>
 										<input id="proponente" type="text" class="form-control" name="proponente" value="" pattern=".{1,30}$" required autofocus>
 										<div class="invalid-feedback">
-											*Proponente es requerido y debe ser hasta un máximo de 30 caracteres.
+											*Proponente es requerido y no debe superar 30 caracteres.
 										</div>
 								</div>
 
@@ -28,16 +28,16 @@
 									<label for="fecha">Fecha de inscripción:</label>
 										<input id="fecha" type="date" class="form-control" name="fecha" value="" required autofocus>
 										<div class="invalid-feedback">
-											Se necesita fecha de inscripción
+											*Se requiere fecha de inscripción.
 										</div>
 								</div>
 
 
 								<div class="form-group">
 									<label for="direccionimg">Dirección IMG:</label>
-									<input id="direccionimg" type="text" class="form-control" name="direccionimg" value="media/proyectos/sinimagen.jpg" required autofocus>
+									<input id="direccionimg" type="text" class="form-control" name="direccionimg" pattern=".{1,100}$" value="media/proyectos/sinimagen.jpg" required autofocus>
 								    <div class="invalid-feedback">
-								    	Dirección de imagen
+										*dirección URL IMG es requerida y no debe superar 100 caracteres.
 							    	</div>
 								</div>
 
@@ -49,7 +49,7 @@
 									<label for="nombre">Título de propuesta:</label>
 										<input id="nombre" type="text" class="form-control" name="nombre" value="" pattern=".{1,100}$" required autofocus>
 										<div class="invalid-feedback">
-											*El titulo es requerido y debe ser hasta un máximo de 100 caracteres.
+											*El titulo es requerido y no debe superar 100 caracteres.
 										</div>
 								</div>
 
@@ -67,7 +67,7 @@
 							                <option value="Producto">Producto</option>
 					                    </select>
                                         <div class="invalid-feedback">
-											El tipo es requerido
+											*El tipo es requerido
 										</div>
 
                                 </div>
@@ -81,7 +81,7 @@
 					                        <option value="Servicio Social">Servicio Social</option>
 				                        </select>
                                         <div class="invalid-feedback">
-											El nivel es requerido
+											*El nivel es requerido
 										</div>
 
                                 </div>
@@ -96,24 +96,24 @@
 					                        <option value="Grupal">Grupal</option>
 				                        </select>
                                         <div class="invalid-feedback">
-											La modalidad es requerida
+											*La modalidad es requerida
 										</div>
                     
                                 </div>
 
                                 <div class="form-group">
 									<label for="clasificacion">Clasificación:</label>
-										<input id="clasificacion" type="text" class="form-control" name="clasificacion" value="" pattern=".{1,50}$" autofocus>
+										<input id="clasificacion" type="text" class="form-control" name="clasificacion" value="" pattern=".{1,50}$" required autofocus>
 										<div class="invalid-feedback">
-											*La clasificación es requerida y debe ser hasta un máximo de 100 caracteres.
+											*La clasificación es requerida y no debe superar 100 caracteres.
 										</div>
 								</div>
 
                                 <div class="form-group">
 									<label for="categoria">Categoría:</label>
-										<input id="categoria" type="text" class="form-control" name="categoria" value="" pattern=".{1,75}$" autofocus>
+										<input id="categoria" type="text" class="form-control" name="categoria" value="" pattern=".{1,75}$" required autofocus>
 										<div class="invalid-feedback">
-										*La categoría es requerida y debe ser hasta un máximo de 75 caracteres.
+										*La categoría es requerida y no debe superar 75 caracteres.
 										</div>
 								</div>
 
@@ -121,7 +121,7 @@
 									<label for="objetivo">Objetivo:</label>
 										<input id="objetivo" type="text" class="form-control" name="objetivo" value="" pattern=".{1,100}$" required autofocus>
 										<div class="invalid-feedback">
-											*El objetivo es requerido y debe ser hasta un máximo de 100 caracteres.
+											*El objetivo es requerido y no debe superar 100 caracteres.
 										</div>
 								</div>
 
@@ -130,7 +130,7 @@
 									<label for="descripcion">Descripción:</label>
 										<textarea id="descripcion" type="text" class="form-control" name="descripcion" value="" pattern=".{1,100}$" required autofocus></textarea>
 										<div class="invalid-feedback">
-											*La descripción es requerida y debe ser hasta un máximo de 100 caracteres.
+											*La descripción es requerida y no debe superar 100 caracteres.
 										</div>
 								</div>
 
