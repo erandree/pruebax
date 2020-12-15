@@ -17,9 +17,9 @@
 
 								<div class="form-group">
 									<label for="proponente">Proponente:</label>
-										<input id="proponente" type="text" class="form-control" name="proponente" value="" required autofocus>
+										<input id="proponente" type="text" class="form-control" name="proponente" value="" pattern=".{1,30}$" required autofocus>
 										<div class="invalid-feedback">
-											Proponente es requerido
+											*Proponente es requerido y debe ser hasta un máximo de 30 caracteres.
 										</div>
 								</div>
 
@@ -47,15 +47,15 @@
 
                                 <div class="form-group">
 									<label for="nombre">Título de propuesta:</label>
-										<input id="nombre" type="text" class="form-control" name="nombre" value="" required autofocus>
+										<input id="nombre" type="text" class="form-control" name="nombre" value="" pattern=".{1,100}$" required autofocus>
 										<div class="invalid-feedback">
-											El titulo es requerido
+											*El titulo es requerido y debe ser hasta un máximo de 100 caracteres.
 										</div>
 								</div>
 
 
 								<div class="form-group">
-										<input id="estado" type="hidden" class="form-control" name="estado" value="En revisión">
+										<input id="estado" type="hidden" class="form-control" name="estado" value="En revisión" >
 								</div>
 
                                 <div class="form-group">
@@ -103,34 +103,34 @@
 
                                 <div class="form-group">
 									<label for="clasificacion">Clasificación:</label>
-										<input id="clasificacion" type="text" class="form-control" name="clasificacion" value="" autofocus>
+										<input id="clasificacion" type="text" class="form-control" name="clasificacion" value="" pattern=".{1,50}$" autofocus>
 										<div class="invalid-feedback">
-											La clasificación es requerida
+											*La clasificación es requerida y debe ser hasta un máximo de 100 caracteres.
 										</div>
 								</div>
 
                                 <div class="form-group">
 									<label for="categoria">Categoría:</label>
-										<input id="categoria" type="text" class="form-control" name="categoria" value="" autofocus>
+										<input id="categoria" type="text" class="form-control" name="categoria" value="" pattern=".{1,75}$" autofocus>
 										<div class="invalid-feedback">
-											La categoría es requerida
+										*La categoría es requerida y debe ser hasta un máximo de 75 caracteres.
 										</div>
 								</div>
 
                                 <div class="form-group">
 									<label for="objetivo">Objetivo:</label>
-										<input id="objetivo" type="text" class="form-control" name="objetivo" value="" required autofocus>
+										<input id="objetivo" type="text" class="form-control" name="objetivo" value="" pattern=".{1,100}$" required autofocus>
 										<div class="invalid-feedback">
-											El objetivo es requerido
+											*El objetivo es requerido y debe ser hasta un máximo de 100 caracteres.
 										</div>
 								</div>
 
                                 
                                 <div class="form-group">
 									<label for="descripcion">Descripción:</label>
-										<textarea id="descripcion" type="text" class="form-control" name="descripcion" value="" required autofocus></textarea>
+										<textarea id="descripcion" type="text" class="form-control" name="descripcion" value="" pattern=".{1,100}$" required autofocus></textarea>
 										<div class="invalid-feedback">
-											La descripción es requerida
+											*La descripción es requerida y debe ser hasta un máximo de 100 caracteres.
 										</div>
 								</div>
 

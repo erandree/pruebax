@@ -15,9 +15,9 @@
 
 								<div class="form-group">
 									<label for="lugar" class="mensajes">Lugar:</label>
-										<input type="text" class="form-control" name="lugar" value="" required autofocus>
+										<input type="text" class="form-control" name="lugar" value="" pattern=".{1,50}$" required autofocus>
 										<div class="invalid-feedback">
-                                            El lugar es requerido
+											*El lugar es requerido y debe ser hasta un máximo de 50 caracteres.
 										</div>
 								</div>
 
@@ -25,25 +25,25 @@
 
 								<div class="form-group">
 									<label for="nombre" class="mensajes">Descripcion del lugar:</label>
-										<textarea type="text" class="form-control" name="descripcion_lugar" value="" required autofocus></textarea>
+										<textarea type="text" class="form-control" name="descripcion_lugar" value="" pattern=".{1,60}$" required autofocus></textarea>
 										<div class="invalid-feedback">
-											Descripción del lugar es requerido
+											*La descripción del lugar es requerida y debe ser hasta un máximo de 60 caracteres.
 										</div>
 								</div>
 
 								<div class="form-group">
 									<label for="actividad" class="mensajes">Actividad:</label>
-										<input type="text" class="form-control" name="actividad" value="" required autofocus>
+										<input type="text" class="form-control" name="actividad" value="" pattern=".{1,50}$" required autofocus>
 										<div class="invalid-feedback">
-                                            La actividad es requerida
+											*La actividad es requerida y debe ser hasta un máximo de 50 caracteres.
 										</div>
 								</div>
 
 								<div class="form-group">
 									<label for="horas" class="mensajes">Horas:</label>
-										<input type="number" step="0.1" class="form-control" name="horas" value="" required autofocus>
+										<input type="number" step="0.1" class="form-control" name="horas" min="0" value="" required autofocus>
 										<div class="invalid-feedback">
-											Las horas son requeridas
+										*La actividad es requerida y no debe ser negativa
 										</div>
 								</div>
 
