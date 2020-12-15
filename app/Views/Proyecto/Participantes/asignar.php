@@ -8,7 +8,7 @@
 					</div>
 					<div class="card fat">
 						<div class="card-body">
-                            <h3 class="card-title">Asignar usuario</h3>
+                            <h3 class="card-title">Asignar participante al proyecto</h3>
                             
 
                                 <?php foreach($datosproyecto as $dato2): ?>
@@ -32,6 +32,10 @@
                                         <option value="<?php echo $fila['id']; ?>"><?php echo $fila['correoutp']; ?></option>
                                         <?php endforeach ?>
                                     </select>
+                                    <div class="invalid-feedback">
+                                        Correo del participante es requerido
+										</div>
+                                    
                                 
                                 </div>
 
@@ -39,11 +43,15 @@
                                 <div class="form-group">
                                     <label for="proyecto" class="mensajes">Funcion:</label>
                                         <select  class="form-control" name="funcion" required >
+                                            <option selected hidden value=""></option>
                                             <option value="Administrador">Administrador</option>
                                             <option value="Responsable">Responsable</option>
                                             <option value="Supervisor">Supervisor</option>
                                             <option value="Participante">Participante</option>
                                         </select>
+                                        <div class="invalid-feedback">
+                                        Funcion es requerida
+										</div>
                                 </div>
                             
 

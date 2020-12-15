@@ -21,9 +21,9 @@
 				                    <label for="estado" class="mensajes">Estado:</label>
 					                    <select  class="form-control" name="estado">
   						                    <option selected hidden value="<?php echo $dato['estado']; ?>"><?php echo $dato['estado']; ?></option>
-					  	                    <option value="En revisión">En revisión</option>
-					  	                    <option value="Disponible">Disponible</option>
-					  	                    <option value="Finalizado">Finalizado</option>
+					  	                    <option value="Pendiente">Pendiente</option>
+					  	                    <option value="Aprobado">Aprobado</option>
+					  	                    <option value="Rechazado">Rechazado</option>
 					                    </select>
 			                    </div>
 
@@ -136,7 +136,7 @@
                                 
                                 <div class="form-group">
 									<label for="descripcion">Descripción:</label>
-										<textarea id="descripcion" type="text" class="form-control" name="descripcion" value="<?php echo $dato['descripcion']; ?>" required autofocus></textarea>
+										<textarea id="descripcion" type="text" class="form-control" name="descripcion" required autofocus><?php echo $dato['descripcion']; ?></textarea>
 										<div class="invalid-feedback">
 											El objetivo es requerido
 										</div>

@@ -33,11 +33,25 @@ class ProyectoModel{
     }
 
     public function obtenerProyectosDisponibles(){
-        $consulta = $this->db->query("SELECT * FROM proyectos WHERE estado='Disponible';");
+        $consulta = $this->db->query("SELECT * FROM proyectos WHERE estado='Aprobado';");
         while($filas = $consulta->fetch_assoc()){
             $proyectos[] = $filas;
         }
         return $proyectos;
+    }
+
+    public function registrarproyecto($data)
+    {
+        $consulta = $this->db->query("INSERT INTO proyectos(estado, proponente, fecha, direccionimg, nombre, tipo, nivel, modalidad, clasificacion, categoria, objetivo, descripcion)
+        VALUES ('".$data['estado']."','".$data['proponente']."','".$data['fecha']."','".$data['direccionimg']."','".$data['nombre']."','".$data['tipo']."','".$data['nivel']."','".$data['modalidad']."','".$data['clasificacion']."','".$data['categoria']."','".$data['objetivo']."','".$data['descripcion']."');"); 
+        if($consulta)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 
     //Listar todos los proyectos de la tabla proyectos

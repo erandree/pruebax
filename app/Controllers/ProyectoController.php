@@ -57,7 +57,7 @@ class ProyectoController
           $usuario = new ProyectoModel();
             if($usuario->registrarproyecto($data))
             {
-              $mensaje = 'La actualización fue exitosa';
+              $mensaje = 'El registro de propuesta fue exitoso';
               $mensajeboton = "Aceptar";
               $direccion = "?controller=Proyecto&action=administracion";
               require_once('Views/Proyecto/mensaje.php');

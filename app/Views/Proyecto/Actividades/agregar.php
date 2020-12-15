@@ -17,7 +17,7 @@
 									<label for="lugar" class="mensajes">Lugar:</label>
 										<input type="text" class="form-control" name="lugar" value="" required autofocus>
 										<div class="invalid-feedback">
-                                            Lugar es requerida
+                                            El lugar es requerido
 										</div>
 								</div>
 
@@ -27,7 +27,7 @@
 									<label for="nombre" class="mensajes">Descripcion del lugar:</label>
 										<textarea type="text" class="form-control" name="descripcion_lugar" value="" required autofocus></textarea>
 										<div class="invalid-feedback">
-											Descripción es requerida
+											Descripción del lugar es requerido
 										</div>
 								</div>
 
@@ -35,7 +35,7 @@
 									<label for="actividad" class="mensajes">Actividad:</label>
 										<input type="text" class="form-control" name="actividad" value="" required autofocus>
 										<div class="invalid-feedback">
-                                            Actividad es requerido
+                                            La actividad es requerida
 										</div>
 								</div>
 
@@ -43,7 +43,7 @@
 									<label for="horas" class="mensajes">Horas:</label>
 										<input type="number" step="0.1" class="form-control" name="horas" value="" required autofocus>
 										<div class="invalid-feedback">
-											horas es requerida
+											Las horas son requeridas
 										</div>
 								</div>
 

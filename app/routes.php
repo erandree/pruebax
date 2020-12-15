@@ -3,7 +3,7 @@
 
 $controllers = array(
     'Menu' => ['index'],
-    'Proyecto'=>["registro","listado","administracion","actualizar","editar","detalles"],
+    'Proyecto'=>["registro","listado","administracion","actualizar","editar","detalles","registrarproyecto"],
     'Usuario'=>["administracion","registrar","guardar","editar","actualizar", "eliminar","eliminarusuario"],
     'Participantes'=>["administracion","editar","actualizar","asignar","agregarparticipante","remover","eliminar"],
     'Actividades'=>["administracion","editar","modificar","agregar","guardar","remover","eliminar"]

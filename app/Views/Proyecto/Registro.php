@@ -46,10 +46,10 @@
 								<br>
 
                                 <div class="form-group">
-									<label for="nombre">Nombre de propuesta:</label>
+									<label for="nombre">Título de propuesta:</label>
 										<input id="nombre" type="text" class="form-control" name="nombre" value="" required autofocus>
 										<div class="invalid-feedback">
-											El nombre es requerido
+											El titulo es requerido
 										</div>
 								</div>
 
@@ -103,7 +103,7 @@
 
                                 <div class="form-group">
 									<label for="clasificacion">Clasificación:</label>
-										<input id="clasificacion" type="text" class="form-control" name="clasificacion" value="" required autofocus>
+										<input id="clasificacion" type="text" class="form-control" name="clasificacion" value="" autofocus>
 										<div class="invalid-feedback">
 											La clasificación es requerida
 										</div>
@@ -111,7 +111,7 @@
 
                                 <div class="form-group">
 									<label for="categoria">Categoría:</label>
-										<input id="categoria" type="text" class="form-control" name="categoria" value="" required autofocus>
+										<input id="categoria" type="text" class="form-control" name="categoria" value="" autofocus>
 										<div class="invalid-feedback">
 											La categoría es requerida
 										</div>
@@ -130,7 +130,7 @@
 									<label for="descripcion">Descripción:</label>
 										<textarea id="descripcion" type="text" class="form-control" name="descripcion" value="" required autofocus></textarea>
 										<div class="invalid-feedback">
-											El objetivo es requerido
+											La descripción es requerida
 										</div>
 								</div>
 
