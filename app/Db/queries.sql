@@ -1,3 +1,5 @@
+CREATE DATABASES
+
 CREATE TABLE `actividades` (
   `id` int(4) NOT NULL,
   `fk_proyecto` int(4) NOT NULL,
@@ -78,10 +80,10 @@ ALTER TABLE `actividades`
   MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 
   ALTER TABLE `participantes`
-  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 
   ALTER TABLE `proyectos`
-  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 
   ALTER TABLE `actividades`
   ADD CONSTRAINT `fk_actividades_proyectos` FOREIGN KEY (`fk_proyecto`) REFERENCES `proyectos` (`id`);
@@ -89,4 +91,12 @@ ALTER TABLE `actividades`
   ALTER TABLE `proyectosparticipantes`
   ADD CONSTRAINT `fk_idparticipantes` FOREIGN KEY (`id_participante`) REFERENCES `participantes` (`id`),
   ADD CONSTRAINT `fk_idproyecto` FOREIGN KEY (`id_proyecto`) REFERENCES `proyectos` (`id`);
+
+
+  INSERT INTO `funciones` (`id`, `categoria`, `nombre`, `imagen`, `direccion`, `controlador`, `action`) VALUES
+(1, 'Proyectos', 'Registrar propuesta de proyecto', 'media/funciones/registropropuesta.jpg', 'Registro.php', 'Proyecto', 'registro'),
+(2, 'Proyectos', 'Listado de proyectos disponibles', 'media/funciones/listadodeproyectos.jpg', 'listado.php', 'Proyecto', 'listado'),
+(3, 'Usuarios', 'Registrar usuario', 'media/funciones/agregarusuario.jpg', 'registroparticipante.php', 'Usuario', 'registrar'),
+(6, 'Proyectos', 'Administración de proyectos', 'media/funciones/administracion.jpg', 'administracion.php', 'Proyecto', 'administracion'),
+(7, 'Usuarios', 'Administración de usuarios', 'media/funciones/administracionusuario.jpg', 'adminparticipantes.php', 'Usuario', 'administracion');
 COMMIT;
