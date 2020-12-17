@@ -32,7 +32,7 @@ class ProyectoModel{
         return $this->listado;
     }
 
-    public function obtenerProyectosDisponibles(){
+    public function obtenerProyectosAprobados(){
         $consulta = $this->db->query("SELECT * FROM proyectos WHERE estado='Aprobado';");
         while($filas = $consulta->fetch_assoc()){
             $proyectos[] = $filas;
@@ -72,6 +72,7 @@ class ProyectoModel{
     //Listar todos los proyectos de la tabla proyectos
 
     public function actualizarproyecto($data){
+
         $consulta = $this->db->query("UPDATE proyectos SET 
         estado = '".$data['estado']."' ,
         proponente = '".$data['proponente']."' , 

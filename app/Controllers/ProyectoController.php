@@ -18,7 +18,7 @@ class ProyectoController
 
 	function listado(){
 		$proyecto= new ProyectoModel();
-		$datos = $proyecto->listarProyectosDisponibles();
+		$datos = $proyecto->obtenerProyectosAprobados();
 		require_once('Views/Proyecto/Listado.php');
     }
     
