@@ -25,7 +25,7 @@
 
 								<div class="form-group">
 									<label for="nombre" class="mensajes">Descripcion del lugar:</label>
-										<textarea type="text" class="form-control" name="descripcion_lugar" value="" pattern=".{1,60}$" required autofocus></textarea>
+										<input type="text" class="form-control" name="descripcion_lugar" value="" pattern=".{1,60}$" required autofocus>
 										<div class="invalid-feedback">
 											*La descripción del lugar es requerida y debe ser hasta un máximo de 60 caracteres.
 										</div>
