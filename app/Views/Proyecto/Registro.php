@@ -128,7 +128,7 @@
                                 
                                 <div class="form-group">
 									<label for="descripcion">Descripción:</label>
-										<textarea id="descripcion" type="text" class="form-control" name="descripcion" value="" pattern=".{1,100}$" required autofocus></textarea>
+										<input id="descripcion" type="text" class="form-control" name="descripcion" value="" pattern=".{1,100}$" required autofocus>
 										<div class="invalid-feedback">
 											*La descripción es requerida y no debe superar 100 caracteres.
 										</div>
