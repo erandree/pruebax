@@ -74,7 +74,7 @@ class ProyectoModel{
     public function actualizarproyecto($data){
 
         $consulta = $this->db->query("UPDATE proyectos SET 
-        estado = '".$data['estado']."' ,
+        estado = '".$data['estado']."' , 
         proponente = '".$data['proponente']."' , 
         fecha = '".$data['fecha']."' , 
         direccionimg = '".$data['direccionimg']."' , 
@@ -86,12 +86,25 @@ class ProyectoModel{
         categoria = '".$data['categoria']."' , 
         objetivo = '".$data['objetivo']."' , 
         descripcion = '".$data['descripcion']."'
-        WHERE id = '$data[id_proyecto]';");
+        WHERE id = '".$data['id_proyecto']."';");
+
+        /*$llaves = array_keys($data);
+        $valores = array_values($data);
+        $string = 'UPDATE proyectos SET';
+        for($i = 0; $i< count($data);$i++){
+            $string .= " ".$llaves[$i] ." = ". "'".$valores[$i]."'" .",";
+          }
+          
+          $string .= " WHERE id =". $id .";";
+          $consulta = $this->db->query($string); */
+          
+
         if($consulta){
             return true;
         }else{
             return false;
         } 
+        
     }
 
     public function listarproyecto($data){
