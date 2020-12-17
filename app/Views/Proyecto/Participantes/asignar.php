@@ -41,7 +41,7 @@
 
 
                                 <div class="form-group">
-                                    <label for="proyecto" class="mensajes">Funcion:</label>
+                                    <label for="proyecto" class="mensajes">Función:</label>
                                         <select  class="form-control" name="funcion" required >
                                             <option selected hidden value=""></option>
                                             <option value="Administrador">Administrador</option>
